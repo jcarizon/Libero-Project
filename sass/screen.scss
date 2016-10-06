@@ -1,0 +1,117 @@
+/* Welcome to Compass.
+ * In this file you sh * Import this file using the following HTML or equivalent:
+ould write your main styles. (or centralize your imports)
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+//variable declarations
+$defcolr: rgb(10, 35, 61);
+$ffam: "Calibri";
+$height: 160px;
+$width: 55%;
+$marg: 10px;
+
+//inheritances
+.divLine {
+  height: $height / 13;
+  width: $width;
+  //border: solid;
+  margin: $marg;
+  background-color: #6495ed;
+}
+
+.sec {
+  height: $height / 1.5;
+  width: $width;
+  //border: solid black;
+  margin: $marg;
+  background-size: cover;
+  opacity: .8;
+}
+
+.secP {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  font-family: $ffam;
+}
+
+.divP {
+  height: $height / 3;
+  width: $width;
+  //border: solid;
+  margin: $marg;
+  font-size: 23px;
+  font-family: $ffam;
+  color: gray;
+}
+
+.aLink {
+  background-color: #6495ed;
+  text-decoration: none;
+  padding: 3px 10px 6px;
+  font-size: 14px;
+  font-family: $ffam;
+  font-weight: bold;
+  color: white;
+}
+
+.divBlacken {
+  height: $height / 1.5;
+  width: 100%;
+  background-color: #000;
+  opacity: .65;
+}
+
+//proper
+.divWhole {
+  border-left: solid gray;
+  height: $height * 3;
+  width: 30%;
+  float: right;
+  padding-left: 20px;
+  margin-top: 50px;
+
+  header{
+    //border: solid;
+    width: $width;
+    color: $defcolr;
+    font-size: 32px;
+    font-family: $ffam;
+    font-weight: bold;
+    margin: $marg;
+  }
+
+  #divLine {
+    @extend .divLine;
+
+  }
+
+  #section {
+    @extend .sec;
+    background-image: url(../images/imgI.jpeg);
+  }
+
+  #section2 {
+    @extend .sec;
+    background-image: url(../images/1c.jpeg);
+  }
+
+  #secP {
+    @extend .secP;
+  }
+
+  #divP {
+    @extend .divP;
+  }
+
+  #aLink {
+    @extend .aLink;
+  }
+
+  #divBlacken {
+    @extend .divBlacken;
+  }
+}
