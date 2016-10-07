@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you sh * Import this file using the following HTML or equivalent:
-ould write your main styles. (or centralize your imports)
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,84 +63,288 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 16, ../sass/screen.scss */
-.divLine, .divWhole #divLine {
-  height: 12.30769px;
-  width: 55%;
-  margin: 10px;
-  background-color: #6495ed;
+/* line 7, ../sass/screen.scss */
+body #navbar {
+  background-color: #0a233d;
+  margin: 0 auto;
+}
+/* line 15, ../sass/screen.scss */
+body #navbar div {
+  display: inline-block;
+}
+/* line 21, ../sass/screen.scss */
+body header #logo {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 60px;
+  margin-bottom: 160px;
+}
+/* line 29, ../sass/screen.scss */
+body header #logo img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* line 35, ../sass/screen.scss */
+body header #libero {
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+/* line 39, ../sass/screen.scss */
+body header #libero img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* line 45, ../sass/screen.scss */
+body header #container {
+  display: inline-block;
+  margin-right: 200px;
+}
+/* line 54, ../sass/screen.scss */
+body header #container li {
+  display: inline;
+}
+/* line 58, ../sass/screen.scss */
+body header #container a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: inline;
+  font-family: Arial Rounded MT Bold, Tahoma, Geneva, sans-serif;
+  font-size: 25px;
+  text-align: right;
+  padding: 10px;
+  letter-spacing: 4px;
+  margin-right: 10px;
+}
+/* line 70, ../sass/screen.scss */
+body header #container a:hover {
+  color: red;
+}
+/* line 75, ../sass/screen.scss */
+body header #search {
+  margin-left: 160px;
+  position: relative;
+}
+/* line 78, ../sass/screen.scss */
+body header #search img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* line 86, ../sass/screen.scss */
+body #buttonContainer1 {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 30px;
+  width: 100px;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 80px;
+}
+/* line 101, ../sass/screen.scss */
+body #outermost {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  margin-left: 18px;
+  margin-top: 2.5px;
+  position: absolute;
+}
+/* line 112, ../sass/screen.scss */
+body #outer {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+  position: absolute;
+}
+/* line 124, ../sass/screen.scss */
+body #button1 {
+  position: absolute;
+  visibility: visible;
+  margin-left: 24px;
+  margin-top: 9px;
+}
+/* line 133, ../sass/screen.scss */
+body #buttonContainer2 {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 30px;
+  width: 100px;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 220px;
+}
+/* line 145, ../sass/screen.scss */
+body #outermost2 {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  margin-left: 18px;
+  margin-top: 2.5px;
+  position: absolute;
+}
+/* line 157, ../sass/screen.scss */
+body #outer2 {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+  position: absolute;
+}
+/* line 169, ../sass/screen.scss */
+body #button2 {
+  position: absolute;
+  visibility: visible;
+  margin-left: 24px;
+  margin-top: 8px;
+}
+/* line 176, ../sass/screen.scss */
+body .clickbutton {
+  float: right;
+  margin-right: -45px;
+  color: orange;
+  font-weight: bolder;
 }
 
-/* line 24, ../sass/screen.scss */
-.sec, .divWhole #section, .divWhole #section2 {
-  height: 106.66667px;
-  width: 55%;
-  margin: 10px;
+/* line 185, ../sass/screen.scss */
+.mylabel {
+  color: red;
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 30px;
+  width: 100px;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 220px;
+}
+
+/* line 196, ../sass/screen.scss */
+input[type=radio] {
+  visibility: hidden;
+}
+
+/* line 200, ../sass/screen.scss */
+input[type=radio]:checked + label {
+  color: black;
+  background-color: #3a3c20;
+  border: solid 2px black;
+}
+
+/*
+///----------------------------------------
+
+.divLine {
+  height: $height / 13;
+  width: $width;
+  //border: solid;
+  margin: $marg;
+  background-color: #6495ed ;
+}
+
+.sec {
+  height: $height / 1.5;
+  width: $width;
+  //border: solid black;
+  margin: $marg;
   background-size: cover;
   opacity: .8;
 }
 
-/* line 33, ../sass/screen.scss */
-.secP, .divWhole #secP {
+.secP {
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 22px;
-  font-family: "Calibri";
+  font-family: $ffam;
 }
 
-/* line 41, ../sass/screen.scss */
-.divP, .divWhole #divP {
-  height: 53.33333px;
-  width: 55%;
-  margin: 10px;
+.divP {
+  height: $height / 3;
+  width: $width;
+  //border: solid;
+  margin: $marg;
   font-size: 23px;
-  font-family: "Calibri";
+  font-family: $ffam;
   color: gray;
 }
 
-/* line 51, ../sass/screen.scss */
-.aLink, .divWhole #aLink {
-  background-color: #6495ed;
+.aLink {
+  background-color: #6495ed ;
   text-decoration: none;
   padding: 3px 10px 6px;
   font-size: 14px;
-  font-family: "Calibri";
+  font-family: $ffam;
   font-weight: bold;
   color: white;
 }
 
-/* line 61, ../sass/screen.scss */
-.divBlacken, .divWhole #divBlacken {
-  height: 106.66667px;
+.divBlacken {
+  height: $height / 1.5;
   width: 100%;
   background-color: #000;
   opacity: .65;
 }
 
-/* line 69, ../sass/screen.scss */
+//proper
 .divWhole {
   border-left: solid gray;
-  height: 480px;
+  height: $height * 3;
   width: 30%;
   float: right;
   padding-left: 20px;
   margin-top: 50px;
+
+  header{
+    //border: solid;
+    width: $width;
+    color: $defcolr;
+    font-size: 32px;
+    font-family: $ffam;
+    font-weight: bold;
+    margin: $marg;
+  }
+
+  #divLine {
+    @extend .divLine;
+
+  }
+
+  #section {
+    @extend .sec;
+    background-image: url(../images/imgI.jpeg);
+  }
+
+  #section2 {
+    @extend .sec;
+    background-image: url(../images/1c.jpeg);
+  }
+
+  #secP {
+    @extend .secP;
+  }
+
+  #divP {
+    @extend .divP;
+  }
+
+  #aLink {
+    @extend .aLink;
+  }
+
+  #divBlacken {
+    @extend .divBlacken;
+  }
 }
-/* line 77, ../sass/screen.scss */
-.divWhole header {
-  width: 55%;
-  color: #0a233d;
-  font-size: 32px;
-  font-family: "Calibri";
-  font-weight: bold;
-  margin: 10px;
-}
-/* line 92, ../sass/screen.scss */
-.divWhole #section {
-  background-image: url(../images/imgI.jpeg);
-}
-/* line 97, ../sass/screen.scss */
-.divWhole #section2 {
-  background-image: url(../images/1c.jpeg);
-}
+
+*/
