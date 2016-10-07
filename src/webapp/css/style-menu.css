@@ -1,0 +1,67 @@
+body{
+
+    background-color: #083132;
+}
+
+nav ul li{
+
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 2px #747b79;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 100px;
+
+    /*copied from css gradient*/
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+
+}
+
+#section-left {
+
+    background-color: #9c9f84;
+    width: 41%;
+    height: 500px;
+    clear: both;
+    padding: 5px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+#section-main{
+
+    border: solid 2px #747b79;
+    padding: 5px;
+    float: left;
+    width: 56%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.section-right{
+
+    float: left;
+    background-color: #343104;
+    border: solid 2px #747b79;
+    padding: 5px;
+    height: 235px;
+    width: 98%;
+    border-radius: 5px;
+
+}
+footer{
+    background-color: #7b6522;
+    border: solid 2px #747b79;
+    clear: both;
+    margin-top: 5px;
+    border-radius: 5px;
+}
